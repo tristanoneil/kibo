@@ -26,13 +26,13 @@
   </div>
 
   <div class="large-12 columns">
-    {{#each products}}
-      <div class="small-4 columns">
-        <div class="panel">
+    <ul class="large-block-grid-4">
+      {{#each products}}
+        <li class="product">
           <h5>{{name}}</h5>
           <p>{{description}}</p>
-        </div>
-      </div>
-    {{/each}}
+        </li>
+      {{/each}}
+    </ul>
   </div>
 </template>
