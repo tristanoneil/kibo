@@ -1,28 +1,32 @@
 <template name="kibo">
-  <div class="large-12 columns">
-    <h1>Kibo</h1>
+  <div class="row">
+    <div class="large-12 columns">
+      <h1>Kibo</h1>
+    </div>
   </div>
 
-  <div class="large-12 columns">
-    <form id="new">
-      <input type="text" name="url" id="url" required="true" placeholder="URL">
-      <input type="text" name="name" id="name" required="true" placeholder="Name">
-      <textarea name="description" id="description" required="true" placeholder="Description"></textarea>
+  <div class="row">
+    <div class="large-12 columns">
+      <form id="new">
+        <input type="text" name="url" id="url" required="true" placeholder="URL">
+        <input type="text" name="name" id="name" required="true" placeholder="Name">
+        <textarea name="description" id="description" required="true" placeholder="Description"></textarea>
 
-      <div class="actions">
-        <input type="submit" value="Add" class="button small">
-      </div>
-    </form>
+        <div class="actions">
+          <input type="submit" value="Add" class="button small">
+        </div>
+      </form>
+    </div>
   </div>
 
-  <div class="large-12 columns">
-    <ul class="large-block-grid-4">
-      {{#each products}}
-        <li class="product">
+  <div class="row">
+    {{#each products}}
+      <div class="large-4 columns">
+        <div class="product">
           <h5>{{name}}</h5>
           <p>{{description}}</p>
-        </li>
-      {{/each}}
-    </ul>
+        </div>
+      </div>
+    {{/each}}
   </div>
 </template>
