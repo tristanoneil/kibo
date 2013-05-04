@@ -4,6 +4,8 @@ Kibo (希望) the Japanese word for hope (according to Google Translate, I don't
 
 ## Install
 
+First install Meteor if you have not already. You can find documentation about how to install Meteor at http://docs.meteor.com.
+
 ```bash
 git clone git@github.com:tristanoneil/kibo.git
 cd kibo
